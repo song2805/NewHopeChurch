@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'NoonnuBasicGothicRegular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noon-2410@1.0/NoonnuBasicGothicRegular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'NoonnuBasicGothicRegular', 'Arial', sans-serif;
+    margin: 0;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+#hero {
+    background-image: url('images/church.jpg'); /* 배경 이미지 경로 */
+    background-size: cover;                     /* 배경을 섹션에 꽉 채움 */
+    background-position: center;                /* 배경을 중앙에 위치 */
+    background-attachment: fixed;               /* 배경 이미지 고정 */
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+#hero .hero-text h2 {
+    font-size: 48px;
+    margin: 0;
+}
+
+#hero .hero-text p {
+    font-size: 24px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.sermon-list, .event-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.sermon-item, .event-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+}
+
+#map {
+    height: 400px;
+    background-color: #eee;
+    margin-top: 30px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
