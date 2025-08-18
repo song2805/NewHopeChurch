@@ -22,7 +22,7 @@ header {
 
 header .logo h1 {
     margin: 0;
-    font-size: 24px;
+    font-size: 28px;
 }
 
 header nav ul {
@@ -143,12 +143,13 @@ footer {
 
     header nav ul {
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        width: 80%;
-        margin: 0 50px 0 50px;
-        /* padding-left: 10px; */
-        /* padding-right: 50px; */
+        justify-content: space-around;      /* 메뉴 아이템들 사이에 균일한 간격 */
+            align-items: center;            /* 세로 중앙 정렬 */
+            width: 100%;                    /* 너비를 100%로 설정 */
+            max-width: 500px;               /* 최대 너비를 제한하여 너무 넓어지지 않게 함 */
+            margin: 0 auto;                 /* ul 요소를 수평 중앙에 위치시킴 */
+            padding: 10px 0;                /* 위아래 패딩 추가 */
+            list-style: none;
     }
 
     header nav ul li {
