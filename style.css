@@ -109,3 +109,79 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
+.hamburger {
+    display: none;
+    /* 기본적으로 숨김 */
+}
+
+/* 모바일 반응형 스타일 */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav {
+        display: none;
+        position: absolute;
+        top: 65px;
+        /* 헤더 높이에 맞춰 조정 */
+        left: 0;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        /* 다른 요소들 위에 오도록 설정 */
+    }
+
+
+
+    header nav.active {
+        display: block;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 80%;
+        margin: 0 50px 0 50px;
+        /* padding-left: 10px; */
+        /* padding-right: 50px; */
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    .hamburger span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px;
+        background-color: #333;
+    }
+
+    .sermon-list,
+    .event-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .logo {
+        margin: 0;
+        font-size: 24px;
+        text-align: center;
+        width: 100%;
+    }
+}
