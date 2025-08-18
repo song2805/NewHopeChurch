@@ -185,4 +185,9 @@ footer {
         text-align: center;
         width: 100%;
     }
+
+    #hero .hero-text h2 {
+    font-size: 34px;
+    margin: 0;
 }
+}   
