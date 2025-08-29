@@ -184,7 +184,8 @@ footer {
     }
 
     .sermon-list,
-    .event-list {
+    .event-list,
+    .worship-list{
         flex-direction: column;
         align-items: center;
     }
