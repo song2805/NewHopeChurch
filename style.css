@@ -198,7 +198,10 @@ footer {
     }
 
     #hero .hero-text h2 {
-    font-size: 34px;
-    margin: 0;
-}
+        font-size: 34px;
+        margin: 0;
+    }
+    #map {
+        height: 300px;
+    }
 }   
