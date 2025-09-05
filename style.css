@@ -135,7 +135,7 @@ footer {
 
  @media (max-height: 900px) or (min-width: 800px) {
      #about, #worship-times, #praise, #sermons {
-    height: 50vh;
+    height: 100vh;
     }
     
 } 
@@ -224,6 +224,6 @@ footer {
 
   
     #about, #worship-times, #praise, #sermons{
-    height: 50vh;
+    height: 100vh;
     }
 }   
