@@ -127,11 +127,18 @@ footer {
 /* 데스크탑 반응형 스타일 */
 
 @media (min-width: 1024px) {
-    #about, #worship-times {
-    height: 600px;
+    #about, #worship-times, #praise, #sermons, #events {
+    height: 100vh;
     }
     
 }
+
+ @media (max-height: 900px) or (min-width: 800px) {
+     #about, #worship-times, #praise, #sermons {
+    height: 50vh;
+    }
+    
+} 
 
 /* 모바일 반응형 스타일 */
 @media (max-width: 768px) {
@@ -213,5 +220,10 @@ footer {
     }
     #map {
         height: 300px;
+    }
+
+  
+    #about, #worship-times, #praise, #sermons{
+    height: 50vh;
     }
 }   
