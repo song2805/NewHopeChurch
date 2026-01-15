@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- tailwindcss -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>새소망교회</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header  class="fixed top-0 left-0 right-0 z-50">
         <div class="logo">
             <h1>새소망교회</h1>
         </div>
         <nav>
             <ul>
-                <li><a href="#about">교회소개</a></li>
                 <li><a href="#worship-times">예배시간</a></li>
+                <li><a href="#about">교회소개</a></li>
                 <li><a href="#praise">찬양</a></li>
                 <li><a href="#sermons">말씀</a></li>
                 <li><a href="#events">교회소식</a></li>
@@ -29,31 +32,117 @@
     </header>
 
     <main>
+        
+        
         <section id="hero">
             <div class="hero-text">
-                <h2>예수 그리스도는</h2>
-                <h2>누구실까요?</h2>
+                <h2 class="text-shadow-lg/30">Gospel-Centered</h2>
+               
                 <p>새소망교회에 오신 여러분을 환영합니다.</p>
                 <a href="#worship-times" class="btn">예배 안내</a>
             </div>
         </section>
 
-        <section id="about">
-            <h2>교회소개</h2>
-            <p>예수 그리스도를 증명해가는 새소망 교회입니다.</p>
-        </section>
+        
 
-        <section id="worship-times">
-            <h2>예배시간</h2>
+        <section id="worship-times" class="about-container space-y-12">
+            <div class="">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mt-[12rem]">예배시간</h2>
+            </div>
+           
             <div class="worship-list">
                 <div class="worship-item">
-                <h3>주일예배: 오후 1:15</h3>
+                <h3 class="text-lg">주일예배: 오후 1:15  |  Sunday 1:15 pm</h3>
                 </div>
                
             </div>
-              </section>
-              <section id="praise">
-             <h2>찬양</h2>
+        </section>
+
+
+
+        <section id="about" class="about-container">
+            <div class="n-sp max-w-5xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <!-- <h2 class="text-base md:text-lg font-bold text-blue-600 tracking-widest uppercase mb-3">About Us</h2>
+                    <div class="h-1 w-12 bg-blue-600 mx-auto mb-6"></div> -->
+                    <h3 class="text-3xl md:text-4xl font-extrabold text-gray-900 mt-[3rem]">교회소개</h3>
+                    <div class="h-1 w-12 bg-blue-600 mx-auto mt-6"></div>
+                </div>
+        
+                <div class="about-list space-y-12">
+                    <div class="text-center space-y-6">
+                        <p class="text-base md:text-xl lg:text-2xl font-bold text-gray-800 break-keep leading-tight">
+                            진리가 너희를 자유롭게 하리라, <br class="hidden sm:block">
+                            <span class="text-blue-600">새소망교회</span>로 여러분을 초대합니다.
+                        </p>
+                        <div class="space-y-4">
+                            <p class="text-sm md:text-base lg:text-lg text-gray-600 leading-relaxed break-keep">
+                                세상의 거친 파도 속에서도 우리를 든든하게 붙들어주는 것은 <br class="hidden md:block">
+                                오직 변치 않는 하나님의 말씀입니다.
+                            </p>
+                            <p class="text-sm md:text-base lg:text-lg text-gray-600 leading-relaxed break-keep">
+                                새소망교회는 우리를 지키시는 성부 하나님의 사랑 안에서 <br class="hidden md:block">
+                                참된 평안과 자유를 누리는 공동체입니다.
+                            </p>
+                        </div>
+                    </div>
+        
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+                        <div class="group p-8 rounded-2xl bg-gray-50 hover:bg-blue-50 transition-colors duration-300">
+                            <div class="text-blue-600 mb-4 font-black text-xl italic">01</div>
+                            <h4 class="text-xl md:text-2xl font-bold text-gray-900 mb-4">독생자를 주신 사랑</h4>
+                            <p class="text-gray-700 text-base md:text-lg leading-relaxed break-keep">
+                                하나님은 세상을 이처럼 사랑하사 독생자 예수 그리스도를 우리에게 보내주셨습니다<span class="font-semibold text-blue-700">(요 3:16)</span>. 그 희생을 통해 우리는 영원한 생명을 얻었습니다.
+                            </p>
+                        </div>
+        
+                        <div class="group p-8 rounded-2xl bg-gray-50 hover:bg-blue-50 transition-colors duration-300">
+                            <div class="text-blue-600 mb-4 font-black text-xl italic">02</div>
+                            <h4 class="text-xl md:text-2xl font-bold text-gray-900 mb-4">성령 안에서의 새 생명</h4>
+                            <p class="text-gray-700 text-base md:text-lg leading-relaxed break-keep">
+                                <span class="font-semibold text-gray-900">"성령으로 다시 태어나야 한다"</span>는 말씀처럼, 우리는 성령님의 도우심으로 죄의 사슬을 끊고 매일매일 새롭게 변화됩니다.
+                            </p>
+                        </div>
+        
+                        <div class="group p-8 rounded-2xl bg-gray-50 hover:bg-blue-50 transition-colors duration-300">
+                            <div class="text-blue-600 mb-4 font-black text-xl italic">03</div>
+                            <h4 class="text-xl md:text-2xl font-bold text-gray-900 mb-4">모두를 위한 쉼터</h4>
+                            <p class="text-gray-700 text-base md:text-lg leading-relaxed break-keep">
+                                남녀노소 누구에게나 열려 있는 이곳에서, 성령의 감화하심을 경험하고 죄에서 자유함을 얻는 기쁨을 누리십시오.
+                            </p>
+                        </div>
+                    </div>
+        
+                    <div class="pt-12 text-center">
+                        <p class="text-xl md:text-2xl font-bold text-gray-800 border-t border-gray-100 pt-12 inline-block px-8">
+                            새소망교회에서 <span class="text-blue-600">삼위일체 하나님의 깊은 은혜</span>를 만나보시길 소망합니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section id="about">
+            <h2>교회소개</h2>
+            
+
+            <div class="about-list">
+            <p>진리가 너희를 자유롭게 하리라, 새소망교회로 여러분을 초대합니다.</p>
+
+             <p>세상의 거친 파도 속에서도 우리를 든든하게 붙들어주는 것은 오직 변치 않는 하나님의 말씀입니다.</p> 
+             <p>새소망교회는 우리를 지키시는 성부 하나님의 사랑 안에서 참된 평안과 자유를 누리는 공동체입니다.</p>
+                
+                독생자를 주신 사랑: 하나님은 세상을 이처럼 사랑하사 독생자 예수 그리스도를 우리에게 보내주셨습니다(요 3:16). 그 희생을 통해 우리는 영원한 생명을 얻었고, 삶의 진정한 목적을 발견했습니다.
+                
+                성령 안에서의 새 생명: "성령으로 다시 태어나야 한다"는 말씀처럼, 우리는 성령님의 도우심으로 죄의 사슬을 끊고 매일매일 새롭게 변화됩니다.
+                
+                모두를 위한 쉼터: 남녀노소 누구에게나 열려 있는 이곳에서, 성령의 감화하심을 경험하고 죄에서 자유함을 얻는 기쁨을 누리십시오.
+                
+                새소망교회에서 삼위일체 하나님의 깊은 은혜를 만나보시길 소망합니다.</p>
+            </div>
+        </section> -->
+        
+        <section id="praise" class="about-container space-y-12">
+             <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mt-[3rem]" >찬양</h2>
              <div style="margin-top: 50px;" class="worship-list">
                
                     <iframe width="340" height="191.25" src="https://www.youtube.com/embed/GU6VfynUTuA?si=mCWyvg5-uiQtbtMC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -61,8 +150,8 @@
               </section>
       
 
-        <section id="sermons">
-            <h2>주요 말씀</h2>
+        <section id="sermons" class="about-container space-y-12">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mt-[3rem]">주요 말씀</h2>
             <div class="sermon-list">
                 <div class="sermon-item">
                     <h3>주일예배 말씀</h3>
@@ -73,8 +162,8 @@
             </div>
         </section>
 
-        <section id="events">
-            <h2>교회 소식</h2>
+        <section id="events" class="about-container mt-[3rem] space-y-12">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mt-[3rem]">교회 소식</h2>
             <div class="event-list">
                 <div class="event-item">
                     <h3>Daily bread</h3>
@@ -100,8 +189,8 @@
             </div>
         </section>
 
-        <section id="contact">
-            <h2 >오시는길</h2>
+        <section id="contact" class="about-container mt-[3rem] space-y-12">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mt-[3rem]">오시는길</h2>
             <p>예배시간 : 1 : 15 pm (Sun)</p>
             <p>주소: 9308 Meadow Rd SW,. Lakewood WA</p>
             <p>연락처: 253-203-1622</p>

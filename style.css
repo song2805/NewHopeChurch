@@ -1,3 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    /* 섹션 전체 컨테이너 */
+    .about-container {
+        @apply py-16 md:py-24 bg-white;
+    }
+
+    .sub-title {
+        @apply text-3xl md:text-4xl font-extrabold text-gray-900 mt-[3rem];
+    }
+
+}
+
 @font-face {
     font-family: 'NoonnuBasicGothicRegular';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noon-2410@1.0/NoonnuBasicGothicRegular.woff2') format('woff2');
@@ -20,10 +37,12 @@ header {
     border-bottom: 1px solid #ddd;
 }
 
+
 header .logo h1 {
     margin: 0;
     font-size: 28px;
 }
+
 
 header nav ul {
     margin: 0;
@@ -56,12 +75,13 @@ header nav ul li a {
 }
 
 #hero .hero-text h2 {
-    font-size: 48px;
+    font-size: 70px;
     margin: 0;
 }
 
 #hero .hero-text p {
     font-size: 24px;
+    margin-bottom: 50px;
 }
 
 .btn {
@@ -79,13 +99,15 @@ section {
     text-align: center;
 }
 
-section h2 {
+/* section h2 {
     font-size: 36px;
     margin-bottom: 30px;
+} */ 
+
+#hero, #about, #worship-times, #praise, #sermons, #events {
+    min-height: 100vh;
+    
 }
-
-
-
 .sermon-list, .event-list, .worship-list {
     display: flex;
     justify-content: center;
@@ -96,7 +118,7 @@ section h2 {
     background-color: #f4f4f4;
     padding: 20px;
     border-radius: 5px;
-    width: 300px;
+    width: 500px;
 }
 
 #map {
@@ -128,16 +150,16 @@ footer {
 
 @media (min-width: 1024px) {
     #about, #worship-times, #praise, #sermons, #events {
-    height: 100vh;
+    min-height: 100vh;
     }
-    
+
 }
 
  @media (max-height: 900px) or (min-width: 800px) {
      #about, #worship-times, #praise, #sermons {
-    height: 100vh;
+    min-height: 100vh;
     }
-    
+
 } 
 
 /* 모바일 반응형 스타일 */
@@ -215,7 +237,7 @@ footer {
     }
 
     #hero .hero-text h2 {
-        font-size: 34px;
+        font-size: 50px;
         margin: 0;
     }
     #map {
@@ -224,6 +246,6 @@ footer {
 
   
     #about, #worship-times, #praise, #sermons{
-    height: 100vh;
+    min-height: 100vh;
     }
 }   
