@@ -1,18 +1,8 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer components {
-
-    /* 섹션 전체 컨테이너 */
-    .about-container {
-        @apply py-16 md:py-24 bg-white;
-    }
-
-    .sub-title {
-        @apply text-3xl md:text-4xl font-extrabold text-gray-900 mt-[3rem];
-    }
-
+/* CSS에서 box-sizng 추가 */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
 @font-face {
@@ -26,9 +16,18 @@ body {
     font-family: 'NoonnuBasicGothicRegular', 'Arial', sans-serif;
     margin: 0;
     color: #333;
+    overflow-x: hidden;
+        /* 가로 스크롤 방지 */
+        width: 100%;
+        max-width: 100vw;
 }
 
-header {
+html {
+    overflow-x: hidden;
+    /* 가로 스크롤 방지 */
+}
+
+/* header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,12 +36,14 @@ header {
     border-bottom: 1px solid #ddd;
 }
 
+*/
 
-header .logo h1 {
+/* header .logo h1 {
     margin: 0;
     font-size: 28px;
 }
 
+*/
 
 header nav ul {
     margin: 0;
@@ -72,6 +73,7 @@ header nav ul li a {
     align-items: center;
     text-align: center;
     color: #fff;
+
 }
 
 #hero .hero-text h2 {
@@ -164,9 +166,12 @@ footer {
 
 /* 모바일 반응형 스타일 */
 @media (max-width: 768px) {
+
     header {
         flex-direction: column;
         align-items: flex-start;
+        padding: 15px 20px;
+            /* 모바일에 맞게 패딩 줄임 */
     }
 
     header nav {
@@ -236,6 +241,12 @@ footer {
         width: 100%;
     }
 
+                                #hero {
+                                    background-attachment: scroll;
+                                    /* 모바일에서는 fixed 대신 scroll 사용 */
+                                    height: 400px;
+                                    /* 모바일에 맞게 높이 조정 */
+                                }
     #hero .hero-text h2 {
         font-size: 50px;
         margin: 0;
